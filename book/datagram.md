@@ -27,6 +27,7 @@ Content-Length: 1024
 
 
 ## 首部
+
 请求报文和响应报文第一行之后就是零个或多个HTTP首部字段。
 
 如上文中`Content-Length: 1024`就是将`Content-Length`赋值`1024`，本质上首部就是键值对的数据。

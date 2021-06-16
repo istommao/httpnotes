@@ -9,13 +9,13 @@ sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 # Connect as client to a selected server
 # on a specified port
 
-HOST, PORT = '127.0.0.1', 3000
+HOST, PORT = '127.0.0.1', 33333
 sock.connect((HOST, PORT))
 
 # Protocol exchange - sends and receives
 url = '/'
 
-body = """a=b&c=d""" * 100000
+body = """a=b&c=d""" * 1000
 
 print(len(body.encode()))
 
